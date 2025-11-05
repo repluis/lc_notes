@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -73,13 +74,47 @@ WSGI_APPLICATION = "lc_proyect.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+# Configuración orientada al dominio - fácil cambio de base de datos
+# Solo cambiar DB_ENGINE y sus parámetros según la base de datos deseada
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+# Configuración de base de datos
+# Opciones: 'sqlite3', 'mysql', 'postgresql'
+DB_ENGINE = 'sqlite3'  # Cambiar aquí para usar otra BD
+
+if DB_ENGINE == 'sqlite3':
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
+elif DB_ENGINE == 'mysql':
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": os.environ.get("DB_NAME", "lc_notes"),
+            "USER": os.environ.get("DB_USER", "root"),
+            "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+            "HOST": os.environ.get("DB_HOST", "localhost"),
+            "PORT": os.environ.get("DB_PORT", "3306"),
+            "OPTIONS": {
+                "charset": "utf8mb4",
+            },
+        }
+    }
+elif DB_ENGINE == 'postgresql':
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ.get("DB_NAME", "lc_notes"),
+            "USER": os.environ.get("DB_USER", "postgres"),
+            "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+            "HOST": os.environ.get("DB_HOST", "localhost"),
+            "PORT": os.environ.get("DB_PORT", "5432"),
+        }
+    }
+else:
+    raise ValueError(f"DB_ENGINE '{DB_ENGINE}' no es válido. Use: 'sqlite3', 'mysql', o 'postgresql'")
 
 
 # Password validation
@@ -113,19 +148,97 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
-
-STATIC_URL = "static/"
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# default static files settings for PythonAnywhere.
-# see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/luis2000/lc_proyect/media'
-MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/luis2000/lc_proyect/static'
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+
+# Directorios donde Django busca archivos estáticos
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# Directorio donde se recopilan los archivos estáticos para producción
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Media files (uploads)
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+
+# Configuración para PythonAnywhere (comentar en desarrollo local)
+# STATIC_ROOT = '/home/luis2000/lc_proyect/static'
+
+# Authentication settings
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
+
+# Logging configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'database_operations': {
+            'format': '{levelname} {asctime} [DB OPERATION] {message}',
+            'style': '{',
+        },
+        'sql_verbose': {
+            'format': '{levelname} {asctime} [SQL] {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'debug.log',
+            'formatter': 'verbose',
+        },
+        'database_operations_file': {
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'database_operations.log',
+            'formatter': 'database_operations',
+        },
+        'sql_file': {
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'database_queries.log',
+            'formatter': 'sql_verbose',
+        },
+    },
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['sql_file'],
+            'level': 'DEBUG' if DEBUG else 'INFO',
+            'propagate': False,
+        },
+        'notes_home': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'notes_home.repositories': {
+            'handlers': ['console', 'file', 'database_operations_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'database_operations': {
+            'handlers': ['console', 'database_operations_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}

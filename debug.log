@@ -1,0 +1,195 @@
+INFO 2025-11-05 18:19:32,906 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:19:38,612 autoreload C:\archivosLuis\python\lc_notes\notes_home\services\auth_service.py changed, reloading.
+INFO 2025-11-05 18:19:39,411 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:19:40,892 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:19:41,692 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:19:48,743 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:19:58,658 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 18:20:00,862 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:20:00,862 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:20:00,862 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+WARNING 2025-11-05 18:20:01,734 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+ERROR 2025-11-05 18:20:17,130 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:20:17,130 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:20:17,130 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+WARNING 2025-11-05 18:20:17,925 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-11-05 18:21:21,510 autoreload C:\archivosLuis\python\lc_notes\notes_home\services\auth_service.py changed, reloading.
+INFO 2025-11-05 18:21:22,792 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:21:35,744 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:21:36,427 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:21:44,143 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:21:44,912 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:21:46,438 autoreload C:\archivosLuis\python\lc_notes\notes_home\services\auth_service.py changed, reloading.
+INFO 2025-11-05 18:21:47,172 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 18:21:51,160 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:21:51,160 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:21:51,160 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:21:51,160 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:21:51,160 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:21:51,160 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:21:51,160 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:21:51,160 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:21:51,180 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:21:51,924 auth_service LOG SERVICIO ERROR REPOSITORIO - La contraseña no puede estar vacía
+WARNING 2025-11-05 18:21:52,006 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+ERROR 2025-11-05 18:22:00,427 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:22:00,427 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:22:00,427 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:22:00,427 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:22:00,427 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:22:00,427 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:22:00,427 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:22:00,427 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:22:00,427 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:22:01,147 auth_service LOG SERVICIO ERROR REPOSITORIO - La contraseña no puede estar vacía
+WARNING 2025-11-05 18:22:01,194 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-11-05 18:22:18,456 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:22:19,295 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:22:27,064 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:22:27,762 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:22:46,904 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:22:47,725 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:22:56,461 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:22:57,195 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:23:01,860 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:23:02,564 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 18:23:10,399 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:23:10,399 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:23:10,399 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:23:10,399 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:23:10,399 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:23:10,399 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:23:10,399 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:23:10,407 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:23:10,416 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:23:10,417 user_repository LOG REPOSITORIO ANTES CREATE_USER - password length: 11, password value: 'Barce'
+ERROR 2025-11-05 18:23:10,417 user_repository LOG REPOSITORIO DENTRO TRANSACTION - antes de create_user
+ERROR 2025-11-05 18:23:10,417 user_repository LOG REPOSITORIO PARÁMETROS CREATE_USER - username: luis, email: Antocede5@gmail.com, password length: 11, is_active: True
+ERROR 2025-11-05 18:23:11,145 user_repository LOG REPOSITORIO CREATE_USER OK - usuario ID: 2
+ERROR 2025-11-05 18:23:11,147 auth_service LOG SERVICIO ERROR REPOSITORIO - La contraseña no puede estar vacía
+WARNING 2025-11-05 18:23:11,207 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+ERROR 2025-11-05 18:23:18,745 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:23:18,745 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:23:18,745 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:23:18,745 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:23:18,745 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:23:18,745 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO ANTES CREATE_USER - password length: 11, password value: 'Barce'
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO DENTRO TRANSACTION - antes de create_user
+ERROR 2025-11-05 18:23:18,745 user_repository LOG REPOSITORIO PARÁMETROS CREATE_USER - username: luis, email: Antocede5@gmail.com, password length: 11, is_active: True
+ERROR 2025-11-05 18:23:19,492 user_repository LOG REPOSITORIO CREATE_USER OK - usuario ID: 2
+ERROR 2025-11-05 18:23:19,492 auth_service LOG SERVICIO ERROR REPOSITORIO - La contraseña no puede estar vacía
+WARNING 2025-11-05 18:23:19,562 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-11-05 18:23:42,625 autoreload C:\archivosLuis\python\lc_notes\notes_home\domain\entities.py changed, reloading.
+INFO 2025-11-05 18:23:43,325 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:23:45,014 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:23:45,772 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:23:53,495 autoreload C:\archivosLuis\python\lc_notes\notes_home\domain\entities.py changed, reloading.
+INFO 2025-11-05 18:23:54,143 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:24:14,363 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:24:15,111 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 18:24:22,323 views LOG VISTA - username: luis, email: Antocede5@gmail.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:24:22,323 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:24:22,323 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:24:22,323 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:24:22,323 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:24:22,323 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:24:22,323 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:24:22,323 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:24:22,338 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:24:22,338 user_repository LOG REPOSITORIO ANTES CREATE_USER - password length: 11, password value: 'Barce'
+ERROR 2025-11-05 18:24:22,338 user_repository LOG REPOSITORIO DENTRO TRANSACTION - antes de create_user
+ERROR 2025-11-05 18:24:22,338 user_repository LOG REPOSITORIO PARÁMETROS CREATE_USER - username: luis, email: Antocede5@gmail.com, password length: 11, is_active: True
+ERROR 2025-11-05 18:24:23,125 user_repository LOG REPOSITORIO CREATE_USER OK - usuario ID: 2
+ERROR 2025-11-05 18:24:23,141 auth_service LOG SERVICIO USUARIO CREADO - ID: 2
+WARNING 2025-11-05 18:24:23,966 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:32,790 log Method Not Allowed (GET): /logout/
+WARNING 2025-11-05 18:24:35,250 log Method Not Allowed (GET): /logout/
+WARNING 2025-11-05 18:24:36,007 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:36,026 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:40,327 log Forbidden (CSRF token from POST incorrect.): /register/
+WARNING 2025-11-05 18:24:40,398 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:43,052 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:43,724 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:44,694 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:44,709 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:45,666 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:47,102 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:24:48,820 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+ERROR 2025-11-05 18:25:56,264 views LOG VISTA - username: luis2, email: antocede5@outlook.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:25:56,265 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:25:56,265 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:26:11,198 views LOG VISTA - username: luis2, email: antocede5@bsc.com, password type: <class 'str'>, password length: 11, password value: ***, password_confirm length: 11
+ERROR 2025-11-05 18:26:11,198 auth_service LOG SERVICIO INICIO - password type: <class 'str'>, password length: 11, password value: ***, password is None: False, password == '': False
+ERROR 2025-11-05 18:26:11,198 auth_service LOG SERVICIO DESPUÉS STRIP - password length: 11, password_before_strip length: 11
+ERROR 2025-11-05 18:26:11,198 auth_service LOG SERVICIO ANTES ENTIDAD - password length: 11, password type: <class 'str'>
+ERROR 2025-11-05 18:26:11,198 auth_service LOG SERVICIO ENTIDAD CREADA - domain_user.password length: 11
+ERROR 2025-11-05 18:26:11,198 auth_service LOG SERVICIO ANTES REPOSITORIO - domain_user.password length: 11
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO INICIO - user.password type: <class 'str'>, user.password length: 11, user.password is None: False, user.password == '': False
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO ANTES VALIDATE_PASSWORD - password: ***
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO VALIDATE_PASSWORD OK
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO ANTES CREATE_USER - password length: 11, password value: 'Barce'
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO DENTRO TRANSACTION - antes de create_user
+ERROR 2025-11-05 18:26:11,198 user_repository LOG REPOSITORIO PARÁMETROS CREATE_USER - username: luis2, email: antocede5@bsc.com, password length: 11, is_active: True
+ERROR 2025-11-05 18:26:11,943 user_repository LOG REPOSITORIO CREATE_USER OK - usuario ID: 3
+ERROR 2025-11-05 18:26:11,953 auth_service LOG SERVICIO USUARIO CREADO - ID: 3
+WARNING 2025-11-05 18:26:15,401 log Method Not Allowed (GET): /logout/
+INFO 2025-11-05 18:26:44,206 autoreload C:\archivosLuis\python\lc_notes\notes_home\views.py changed, reloading.
+INFO 2025-11-05 18:26:45,340 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:26:46,892 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\urls.py changed, reloading.
+INFO 2025-11-05 18:26:47,609 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:26:54,263 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\urls.py changed, reloading.
+INFO 2025-11-05 18:26:54,989 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:26:58,577 autoreload C:\archivosLuis\python\lc_notes\notes_home\views.py changed, reloading.
+INFO 2025-11-05 18:26:59,360 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:27:00,895 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\urls.py changed, reloading.
+INFO 2025-11-05 18:27:01,576 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-05 18:30:16,340 log Not Found: /favicon.ico
+WARNING 2025-11-05 18:30:46,842 log Not Found: /favicon.ico
+WARNING 2025-11-05 18:30:49,194 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-11-05 18:30:53,503 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-11-05 18:31:18,661 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:31:19,534 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:31:21,125 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\urls.py changed, reloading.
+INFO 2025-11-05 18:31:21,885 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:31:32,944 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:31:33,782 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:31:52,963 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\urls.py changed, reloading.
+INFO 2025-11-05 18:31:53,757 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:31:55,526 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:31:56,409 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-05 18:31:56,901 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-11-05 18:33:21,018 autoreload C:\archivosLuis\python\lc_notes\notes_home\admin.py changed, reloading.
+INFO 2025-11-05 18:33:21,858 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:35:38,464 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:42:26,537 autoreload C:\archivosLuis\python\lc_notes\notes_home\admin.py changed, reloading.
+INFO 2025-11-05 18:42:27,271 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:47:53,616 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:47:54,422 autoreload 11044 5284 Watching for file changes with StatReloader
+INFO 2025-11-05 18:50:00,862 autoreload 11044 5284 C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:50:01,744 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:50:56,216 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:50:57,634 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:50:59,194 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:50:59,895 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:09,969 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:10,763 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:12,335 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:13,086 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:16,779 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:18,021 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:20,688 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:21,745 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:23,376 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:24,372 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:27,017 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:27,944 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:35,779 autoreload C:\archivosLuis\python\lc_notes\notes_home\apps.py changed, reloading.
+INFO 2025-11-05 18:51:36,562 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:55,735 autoreload C:\archivosLuis\python\lc_notes\notes_home\repositories\user_repository.py changed, reloading.
+INFO 2025-11-05 18:51:56,611 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 18:51:58,186 autoreload C:\archivosLuis\python\lc_notes\lc_proyect\settings.py changed, reloading.
+INFO 2025-11-05 18:51:59,015 autoreload Watching for file changes with StatReloader
