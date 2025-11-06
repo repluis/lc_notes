@@ -1,0 +1,96 @@
+{% extends 'notes_home/base.html' %}
+{% load static %}
+
+{% block title %}Notes Home{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: var(--color-bg-primary);
+        background-image: linear-gradient(135deg, var(--color-primary-1) 0%, var(--color-primary-2) 100%);
+        padding: var(--spacing-md);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: var(--color-bg-card);
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--shadow-lg);
+        padding: var(--spacing-xl);
+        border: 1px solid var(--color-border-primary);
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+        border-bottom: 2px solid var(--color-border-primary);
+    }
+
+    .header h1 {
+        color: var(--color-text-primary);
+        font-size: 32px;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .user-info span {
+        color: var(--color-text-secondary);
+        font-size: 16px;
+    }
+
+    .user-info strong {
+        color: var(--color-text-primary);
+    }
+
+    .btn-logout {
+        padding: 10px 20px;
+        background: var(--color-btn-danger);
+        color: var(--color-text-primary);
+        border: none;
+        border-radius: var(--border-radius-sm);
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: var(--transition-normal);
+    }
+
+    .btn-logout:hover {
+        background: var(--color-btn-danger-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .btn-logout:active {
+        transform: translateY(0);
+    }
+
+    .content {
+        color: var(--color-text-secondary);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+</style>
+
+<div class="container">
+    <div class="header">
+        <h1>Bienvenido a Notes Home</h1>
+        <div class="user-info">
+            <span>Hola, <strong>{{ user.username }}</strong></span>
+            <a href="{% url 'logout' %}" class="btn-logout">Cerrar Sesión</a>
+        </div>
+    </div>
+    <div class="content">
+        <p>Esta es la página de inicio. Has iniciado sesión correctamente.</p>
+    </div>
+</div>
+{% endblock %}

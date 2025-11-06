@@ -1,0 +1,121 @@
+/* 
+ * Sistema de Tema de Colores - Paleta Dark Moderna
+ * Para cambiar los colores, modifica las variables CSS en :root
+ */
+
+:root {
+    /* Colores primarios - Gradiente principal */
+    --color-primary-1: #667eea;
+    --color-primary-2: #764ba2;
+    --color-primary-dark: #4c63d2;
+    --color-primary-light: #8b9eff;
+    
+    /* Colores de fondo */
+    --color-bg-primary: #0f0f23;
+    --color-bg-secondary: #1a1a2e;
+    --color-bg-tertiary: #16213e;
+    --color-bg-card: #1e2749;
+    --color-bg-card-hover: #2a3a5f;
+    
+    /* Colores de texto */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #b8b8d4;
+    --color-text-muted: #8a8a9e;
+    --color-text-link: #8b9eff;
+    --color-text-link-hover: #a8b7ff;
+    
+    /* Colores de borde */
+    --color-border-primary: #2a3a5f;
+    --color-border-secondary: #3a4a6f;
+    --color-border-focus: #667eea;
+    
+    /* Colores de estado */
+    --color-success: #10b981;
+    --color-success-bg: #064e3b;
+    --color-error: #ef4444;
+    --color-error-bg: #7f1d1d;
+    --color-warning: #f59e0b;
+    --color-warning-bg: #78350f;
+    --color-info: #3b82f6;
+    --color-info-bg: #1e3a8a;
+    
+    /* Colores de botones */
+    --color-btn-primary: linear-gradient(135deg, var(--color-primary-1) 0%, var(--color-primary-2) 100%);
+    --color-btn-primary-hover: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-2) 100%);
+    --color-btn-secondary: var(--color-bg-card);
+    --color-btn-secondary-hover: var(--color-bg-card-hover);
+    --color-btn-danger: #dc3545;
+    --color-btn-danger-hover: #c82333;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+    
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    
+    /* Bordes */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 15px;
+    
+    /* Transiciones */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Clases de utilidad para texto */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted { color: var(--color-text-muted); }
+.text-link { color: var(--color-text-link); }
+
+/* Clases de utilidad para fondo */
+.bg-primary { background-color: var(--color-bg-primary); }
+.bg-secondary { background-color: var(--color-bg-secondary); }
+.bg-card { background-color: var(--color-bg-card); }
+
+/* Clases de utilidad para bordes */
+.border-primary { border-color: var(--color-border-primary); }
+.border-secondary { border-color: var(--color-border-secondary); }
+
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-secondary);
+}
+
