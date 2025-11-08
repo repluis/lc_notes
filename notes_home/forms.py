@@ -100,3 +100,51 @@ class RegisterForm(forms.Form):
         
         return cleaned_data
 
+
+class NoteForm(forms.Form):
+    """
+    Formulario para crear y editar notas
+    """
+    title = forms.CharField(
+        label='Título',
+        max_length=200,
+        required=True,
+        widget=forms.TextInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Ingrese el título de la nota'
+        }),
+        help_text='Máximo 200 caracteres.'
+    )
+    
+    content = forms.CharField(
+        label='Contenido',
+        required=False,
+        widget=forms.Textarea(attrs={
+            'class': 'form-control',
+            'placeholder': 'Escriba el contenido de la nota',
+            'rows': 10
+        })
+    )
+    
+    is_archived = forms.BooleanField(
+        label='Archivar',
+        required=False,
+        widget=forms.CheckboxInput(attrs={
+            'class': 'form-check-input'
+        }),
+        help_text='Marca esta opción para archivar la nota.'
+    )
+    
+    def clean_title(self):
+        title = self.cleaned_data.get('title')
+        if title:
+            title = title.strip()
+            if len(title) == 0:
+                raise forms.ValidationError('El título no puede estar vacío.')
+        return title
+    
+    def clean_content(self):
+        content = self.cleaned_data.get('content')
+        if content:
+            content = content.strip()
+        return content or ""

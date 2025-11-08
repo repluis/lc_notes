@@ -28,6 +28,11 @@ urlpatterns = [
     path("login/", auth_views.LoginView.as_view(template_name='notes_home/login.html'), name="login"),
     path("logout/", views.logout_view, name="logout"),
     path("", views.home, name="home"),
+    # URLs para notas
+    path("notes/create/", views.note_create, name="note_create"),
+    path("notes/<int:note_id>/", views.note_detail, name="note_detail"),
+    path("notes/<int:note_id>/edit/", views.note_edit, name="note_edit"),
+    path("notes/<int:note_id>/delete/", views.note_delete, name="note_delete"),
 ]
 
 # Servir archivos estáticos en desarrollo

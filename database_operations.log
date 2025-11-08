@@ -1,2 +1,71 @@
 INFO 2025-11-08 01:32:53,632 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=2, username='luis'
 INFO 2025-11-08 01:34:12,153 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=1, username='luis2000'
+INFO 2025-11-08 01:43:51,781 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:43:51,781 [DB OPERATION] SELECT EXITOSO - Se encontraron 0 notas para el usuario ID=1
+INFO 2025-11-08 01:44:04,861 [DB OPERATION] INSERT - Creando nueva nota: title='xd', user_id=1
+INFO 2025-11-08 01:44:04,871 [DB OPERATION] INSERT EXITOSO - Nota creada con ID=1, title='xd', user_id=1
+INFO 2025-11-08 01:44:04,915 [DB OPERATION] SELECT - Consultando nota por ID=1, user_id=1
+INFO 2025-11-08 01:44:04,915 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=1, title='xd'
+INFO 2025-11-08 01:44:07,943 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:07,943 [DB OPERATION] SELECT EXITOSO - Se encontraron 1 notas para el usuario ID=1
+INFO 2025-11-08 01:44:22,261 [DB OPERATION] INSERT - Creando nueva nota: title='porgramacion', user_id=1
+INFO 2025-11-08 01:44:22,311 [DB OPERATION] INSERT EXITOSO - Nota creada con ID=2, title='porgramacion', user_id=1
+INFO 2025-11-08 01:44:22,354 [DB OPERATION] SELECT - Consultando nota por ID=2, user_id=1
+INFO 2025-11-08 01:44:22,358 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=2, title='porgramacion'
+INFO 2025-11-08 01:44:23,851 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:23,854 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:44:25,998 [DB OPERATION] SELECT - Consultando nota por ID=1, user_id=1
+INFO 2025-11-08 01:44:26,002 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=1, title='xd'
+INFO 2025-11-08 01:44:27,176 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:27,176 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:44:29,781 [DB OPERATION] SELECT - Consultando nota por ID=2, user_id=1
+INFO 2025-11-08 01:44:29,791 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=2, title='porgramacion'
+INFO 2025-11-08 01:44:30,941 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:30,948 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:44:34,027 [DB OPERATION] SELECT - Consultando nota por ID=1, user_id=1
+INFO 2025-11-08 01:44:34,031 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=1, title='xd'
+INFO 2025-11-08 01:44:35,514 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:35,514 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:44:53,732 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:44:53,732 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:46:00,606 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:46:00,609 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:46:19,444 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=3, username='luis2'
+INFO 2025-11-08 01:46:19,480 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=3, include_archived=False
+INFO 2025-11-08 01:46:19,489 [DB OPERATION] SELECT EXITOSO - Se encontraron 0 notas para el usuario ID=3
+INFO 2025-11-08 01:46:46,530 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=2, username='luis'
+INFO 2025-11-08 01:46:46,563 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=2, include_archived=False
+INFO 2025-11-08 01:46:46,563 [DB OPERATION] SELECT EXITOSO - Se encontraron 0 notas para el usuario ID=2
+INFO 2025-11-08 01:46:59,022 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=2, username='luis'
+INFO 2025-11-08 01:46:59,062 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=2, include_archived=False
+INFO 2025-11-08 01:46:59,062 [DB OPERATION] SELECT EXITOSO - Se encontraron 0 notas para el usuario ID=2
+INFO 2025-11-08 01:47:04,589 [DB OPERATION] INSERT - Creando nueva nota: title='rqwe', user_id=2
+INFO 2025-11-08 01:47:04,593 [DB OPERATION] INSERT EXITOSO - Nota creada con ID=3, title='rqwe', user_id=2
+INFO 2025-11-08 01:47:04,609 [DB OPERATION] SELECT - Consultando nota por ID=3, user_id=2
+INFO 2025-11-08 01:47:04,618 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=3, title='rqwe'
+INFO 2025-11-08 01:47:06,740 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=2, include_archived=False
+INFO 2025-11-08 01:47:06,740 [DB OPERATION] SELECT EXITOSO - Se encontraron 1 notas para el usuario ID=2
+INFO 2025-11-08 01:47:18,190 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=2, username='luis'
+INFO 2025-11-08 01:47:18,226 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=2, include_archived=False
+INFO 2025-11-08 01:47:18,231 [DB OPERATION] SELECT EXITOSO - Se encontraron 1 notas para el usuario ID=2
+INFO 2025-11-08 01:47:41,019 [DB OPERATION] UPDATE EXITOSO - Usuario actualizado: ID=1, username='luis2000'
+INFO 2025-11-08 01:47:44,199 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:47:44,207 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:47:46,400 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:47:46,404 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:48:12,431 [DB OPERATION] SELECT - Consultando nota por ID=1, user_id=1
+INFO 2025-11-08 01:48:12,431 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=1, title='xd'
+INFO 2025-11-08 01:48:15,330 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:48:15,334 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:48:24,967 [DB OPERATION] SELECT - Consultando nota por ID=2, user_id=1
+INFO 2025-11-08 01:48:24,969 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=2, title='porgramacion'
+INFO 2025-11-08 01:48:26,606 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:48:26,609 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:48:32,111 [DB OPERATION] SELECT - Consultando nota por ID=2, user_id=1
+INFO 2025-11-08 01:48:32,111 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=2, title='porgramacion'
+INFO 2025-11-08 01:49:28,370 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:49:28,376 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1
+INFO 2025-11-08 01:49:29,610 [DB OPERATION] SELECT - Consultando nota por ID=2, user_id=1
+INFO 2025-11-08 01:49:29,610 [DB OPERATION] SELECT EXITOSO - Nota encontrada: ID=2, title='porgramacion'
+INFO 2025-11-08 01:49:32,104 [DB OPERATION] SELECT - Consultando todas las notas del usuario ID=1, include_archived=False
+INFO 2025-11-08 01:49:32,104 [DB OPERATION] SELECT EXITOSO - Se encontraron 2 notas para el usuario ID=1

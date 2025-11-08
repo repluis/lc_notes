@@ -38,3 +38,34 @@ class User:
             if not self.password or (isinstance(self.password, str) and len(self.password.strip()) == 0):
                 raise ValueError("La contraseña no puede estar vacía")
 
+
+@dataclass
+class Note:
+    """
+    Entidad Nota del dominio
+    Representa una nota en el sistema
+    """
+    title: str
+    content: str
+    user_id: int
+    id: Optional[int] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+    is_archived: bool = False
+    
+    def __post_init__(self):
+        """Validaciones de dominio"""
+        # Validar título
+        if not self.title or (isinstance(self.title, str) and len(self.title.strip()) == 0):
+            raise ValueError("El título de la nota no puede estar vacío")
+        
+        if len(self.title.strip()) > 200:
+            raise ValueError("El título no puede tener más de 200 caracteres")
+        
+        # Validar contenido
+        if self.content is None:
+            self.content = ""
+        
+        # Validar user_id
+        if not self.user_id or not isinstance(self.user_id, int):
+            raise ValueError("El ID de usuario es requerido y debe ser un entero")

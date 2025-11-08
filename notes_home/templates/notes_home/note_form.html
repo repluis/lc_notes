@@ -1,0 +1,204 @@
+{% extends 'notes_home/base.html' %}
+{% load static %}
+
+{% block title %}{{ action }} Nota{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: var(--color-bg-primary);
+        background-image: linear-gradient(135deg, var(--color-primary-1) 0%, var(--color-primary-2) 100%);
+        padding: var(--spacing-md);
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--color-bg-card);
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--shadow-lg);
+        padding: var(--spacing-xl);
+        border: 1px solid var(--color-border-primary);
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+        border-bottom: 2px solid var(--color-border-primary);
+    }
+
+    .header h1 {
+        color: var(--color-text-primary);
+        font-size: 32px;
+    }
+
+    .btn-back {
+        padding: 10px 20px;
+        background: var(--color-text-secondary);
+        color: var(--color-text-primary);
+        border: none;
+        border-radius: var(--border-radius-sm);
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: var(--transition-normal);
+    }
+
+    .btn-back:hover {
+        background: var(--color-text-primary);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .form-group label {
+        display: block;
+        color: var(--color-text-primary);
+        font-weight: 600;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--color-border-primary);
+        border-radius: var(--border-radius-sm);
+        background: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        font-size: 14px;
+        font-family: inherit;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: var(--color-primary-1);
+        box-shadow: 0 0 0 2px rgba(var(--color-primary-1-rgb), 0.2);
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-sm);
+    }
+
+    .form-check-input {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .form-check-label {
+        color: var(--color-text-secondary);
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .help-text {
+        color: var(--color-text-secondary);
+        font-size: 12px;
+        margin-top: var(--spacing-xs);
+    }
+
+    .form-actions {
+        display: flex;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+        justify-content: flex-end;
+    }
+
+    .btn-submit {
+        padding: 12px 24px;
+        background: var(--color-primary-1);
+        color: var(--color-text-primary);
+        border: none;
+        border-radius: var(--border-radius-sm);
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition-normal);
+    }
+
+    .btn-submit:hover {
+        background: var(--color-primary-2);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .error-message {
+        color: var(--color-btn-danger);
+        font-size: 12px;
+        margin-top: var(--spacing-xs);
+    }
+</style>
+
+<div class="container">
+    <div class="header">
+        <h1>{{ action }} Nota</h1>
+        <a href="{% url 'home' %}" class="btn-back">← Volver</a>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">{{ form.title.label }}</label>
+            {{ form.title }}
+            {% if form.title.help_text %}
+                <div class="help-text">{{ form.title.help_text }}</div>
+            {% endif %}
+            {% if form.title.errors %}
+                {% for error in form.title.errors %}
+                    <div class="error-message">{{ error }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="{{ form.content.id_for_label }}">{{ form.content.label }}</label>
+            {{ form.content }}
+            {% if form.content.help_text %}
+                <div class="help-text">{{ form.content.help_text }}</div>
+            {% endif %}
+            {% if form.content.errors %}
+                {% for error in form.content.errors %}
+                    <div class="error-message">{{ error }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        {% if note %}
+        <div class="form-group">
+            <div class="form-check">
+                {{ form.is_archived }}
+                <label for="{{ form.is_archived.id_for_label }}" class="form-check-label">
+                    {{ form.is_archived.label }}
+                </label>
+            </div>
+            {% if form.is_archived.help_text %}
+                <div class="help-text">{{ form.is_archived.help_text }}</div>
+            {% endif %}
+            {% if form.is_archived.errors %}
+                {% for error in form.is_archived.errors %}
+                    <div class="error-message">{{ error }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="form-actions">
+            <a href="{% url 'home' %}" class="btn-back">Cancelar</a>
+            <button type="submit" class="btn-submit">{{ action }}</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
